@@ -5,18 +5,14 @@ curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-
 tar -xf vscode_cli.tar.gz
 
 ## Run code server inline or background
-
 # Inline
 #./code tunnel
-
 # Background
 ./code tunnel service install
 # Monitor service
 ./code tunnel service log
-
-## Set git info
-git config --global user.email “<your_email>”
-git config --global user.name “<your username>”
+# Tip: run `sudo loginctl enable-linger $USER` to ensure the service stays running after you disconnect.
+sudo loginctl enable-linger $USER
 
 ## Set writable permissions
 sudo chmod -R 777 .

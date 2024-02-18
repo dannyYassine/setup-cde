@@ -1,5 +1,9 @@
 #!/bin/bash
 
+### 
+# ASSUMING ON UBUNTU
+###
+
 ## Install vscode server
 curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output vscode_cli.tar.gz
 tar -xf vscode_cli.tar.gz
@@ -13,10 +17,6 @@ tar -xf vscode_cli.tar.gz
 ./code tunnel service log
 # Tip: run `sudo loginctl enable-linger $USER` to ensure the service stays running after you disconnect.
 sudo loginctl enable-linger $USER
-
-## Set git info
-git config --global user.email “<your_email>”
-git config --global user.name “<your username>”
 
 ## Set writable permissions
 sudo chmod -R 777 .

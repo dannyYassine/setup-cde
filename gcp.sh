@@ -27,6 +27,7 @@ Sudo apt-get install make
 Sudo apt-get install git -y
 
 ## Install docker https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
+## assuming on debian
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -

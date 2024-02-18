@@ -27,3 +27,7 @@ sudo apt-get install make
 sudo apt-get install git -y
 sudo apt-get install snap -y
 sudo snap install docker
+
+# Add a startup script with this content in VM DETAILS > AUTOMATION:
+# #!/bin/bash
+# su -l <GCP USER> -c '/home/<GCP USER>/code tunnel &'

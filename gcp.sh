@@ -18,14 +18,9 @@ tar -xf vscode_cli.tar.gz
 # Tip: run `sudo loginctl enable-linger $USER` to ensure the service stays running after you disconnect.
 sudo loginctl enable-linger $USER
 
-## Set writable permissions
-sudo chmod -R 777 .
-
 ## Install dependencies
 sudo apt-get update
-sudo apt-get install make
-sudo apt-get install git -y
-sudo apt-get install snap -y
+sudo apt-get install make git -y
 sudo snap install docker
 
 # Add a startup script with this content in VM DETAILS > AUTOMATION:
@@ -34,3 +29,7 @@ sudo snap install docker
 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+
+# after git cloning your project
+## Set writable permissions
+sudo chmod -R 777 ./<project>

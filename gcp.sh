@@ -31,3 +31,6 @@ sudo snap install docker
 # Add a startup script with this content in VM DETAILS > AUTOMATION:
 # #!/bin/bash
 # su -l <GCP USER> -c '/home/<GCP USER>/code tunnel &'
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"

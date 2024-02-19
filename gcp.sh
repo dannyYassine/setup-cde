@@ -4,6 +4,13 @@
 # ASSUMING ON UBUNTU
 ###
 
+# may need to set new password for:
+## GCP user
+# sudo passwd
+## for root
+# sudo -s
+# sudo passwd
+
 ## Install vscode server
 curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output vscode_cli.tar.gz
 tar -xf vscode_cli.tar.gz

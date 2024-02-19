@@ -27,3 +27,6 @@ sudo apt-get install make
 sudo apt-get install git -y
 sudo apt-get install snap -y
 sudo snap install docker
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"

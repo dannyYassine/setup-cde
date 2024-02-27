@@ -10,12 +10,13 @@ POST https://compute.googleapis.com/compute/v1/projects/turnkey-axiom-335817/zon
     {
       "autoDelete": true,
       "boot": true,
-      "deviceName": "instance-20240227-151028",
+      "deviceName": "instance-20240227-152202",
+      "diskEncryptionKey": {},
       "initializeParams": {
         "diskSizeGb": "10",
         "diskType": "projects/turnkey-axiom-335817/zones/us-central1-a/diskTypes/pd-balanced",
         "labels": {},
-        "sourceImage": "projects/debian-cloud/global/images/debian-12-bookworm-v20240213"
+        "sourceImage": "projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-v20240226"
       },
       "mode": "READ_WRITE",
       "type": "PERSISTENT"
@@ -34,7 +35,7 @@ POST https://compute.googleapis.com/compute/v1/projects/turnkey-axiom-335817/zon
   "metadata": {
     "items": []
   },
-  "name": "instance-20240227-151028",
+  "name": "instance-20240227-152202",
   "networkInterfaces": [
     {
       "accessConfigs": [

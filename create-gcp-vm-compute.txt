@@ -1,0 +1,87 @@
+POST https://compute.googleapis.com/compute/v1/projects/turnkey-axiom-335817/zones/us-central1-a/instances
+{
+  "canIpForward": false,
+  "confidentialInstanceConfig": {
+    "enableConfidentialCompute": false
+  },
+  "deletionProtection": false,
+  "description": "",
+  "disks": [
+    {
+      "autoDelete": true,
+      "boot": true,
+      "deviceName": "instance-20240227-151028",
+      "initializeParams": {
+        "diskSizeGb": "10",
+        "diskType": "projects/turnkey-axiom-335817/zones/us-central1-a/diskTypes/pd-balanced",
+        "labels": {},
+        "sourceImage": "projects/debian-cloud/global/images/debian-12-bookworm-v20240213"
+      },
+      "mode": "READ_WRITE",
+      "type": "PERSISTENT"
+    }
+  ],
+  "displayDevice": {
+    "enableDisplay": true
+  },
+  "guestAccelerators": [],
+  "instanceEncryptionKey": {},
+  "keyRevocationActionType": "NONE",
+  "labels": {
+    "goog-ec-src": "vm_add-rest"
+  },
+  "machineType": "projects/turnkey-axiom-335817/zones/us-central1-a/machineTypes/e2-medium",
+  "metadata": {
+    "items": []
+  },
+  "name": "instance-20240227-151028",
+  "networkInterfaces": [
+    {
+      "accessConfigs": [
+        {
+          "name": "External NAT",
+          "networkTier": "PREMIUM"
+        }
+      ],
+      "stackType": "IPV4_ONLY",
+      "subnetwork": "projects/turnkey-axiom-335817/regions/us-central1/subnetworks/default"
+    }
+  ],
+  "params": {
+    "resourceManagerTags": {}
+  },
+  "reservationAffinity": {
+    "consumeReservationType": "ANY_RESERVATION"
+  },
+  "scheduling": {
+    "automaticRestart": true,
+    "onHostMaintenance": "MIGRATE",
+    "provisioningModel": "STANDARD"
+  },
+  "serviceAccounts": [
+    {
+      "email": "965932034329-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ],
+  "shieldedInstanceConfig": {
+    "enableIntegrityMonitoring": true,
+    "enableSecureBoot": false,
+    "enableVtpm": true
+  },
+  "tags": {
+    "items": [
+      "http-server",
+      "https-server",
+      "lb-health-check"
+    ]
+  },
+  "zone": "projects/turnkey-axiom-335817/zones/us-central1-a"
+}

@@ -40,3 +40,8 @@ git config --global user.name "Your Name"
 # after git cloning your project
 ## Set writable permissions
 sudo chmod -R 777 ./<project>
+
+# to allow on GCP username
+$username=
+sudo passwd $username
+echo "$username ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$username
